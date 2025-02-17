@@ -1,180 +1,74 @@
-[![CI](https://img.shields.io/badge/Github%20Pages-passing-gold.svg?logo=github)](ci)
-[![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-green.svg)](https://jekyllrb.com/)
-[![Jekyll](https://img.shields.io/badge/gem%20version-3.2.33-blue.svg)](gem)
-<a href="https://jekyll-themes.com/byanko55/jekyll-professional-resume">
-  <img
-    src="https://img.shields.io/badge/featured%20on-JT-red.svg"
-    height="20"
-    alt="Jekyll Themes Shield"
-  />
-</a>
-
-# 🎓 - Jekyll Professional Resume
-
-A simple and modern resume template, best fit for either **Academic CV (Curriculum Vitae)** or **Engineer Portfolio**.
-
-Live demo is available [here](https://byanko55.github.io/resume-demo/).
-
-![demo](https://i.ibb.co/HYshYc0/231232121.webp)
-
-## Setup
-Fork [this repository](https://github.com/byanko55/jekyll-professional-resume) or download the [source](https://github.com/byanko55/jekyll-professional-resume/releases) as a zip.
-
-**Rename your repository as USERNAME.github.io or anything else.**
-
-If you choose the former, then your URL will be https://USERNAME.github.io/.
-
-Otherwise (let's say `myresume`), you need to edit the '*baseurl*' parameter in `_config.yml`. In this case, the resume page will be served to "https://USERNAME.github.io/myresume/".
-
-```yml
-# set baseurl as "/<repo-name>". ex) baseurl: /myresume
-baseurl: myresume/
-```
+# Adel wael's Resume
 
 
-### Update Profile
-In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts. 
 
-```yml
-profile_img: assets/img/profile.webp
-icon_img: assets/img/icon.webp
+## Summary
 
-name: "Your Name Here"
-job: "〈Your Job Here〉"
 
-phone_number: 012-345-6789
-address: City, Country
-email: email@example.com
-linkedin_username: linkedin
-github_username: github
-...
 
-```
+I am a computer science student with a passion for data science. 
 
-### Create a Topic
+I enjoy working with data to find patterns, solve problems, and create valuable insights.
 
-All resume information should be placed in a directory named '`_data`'. You may need to manage personal data in separate groups, making a *Yaml* (`.yml`) file for each subject.
+My goal is to offer the most suitable solutions that reflect project specifics and clients' needs.
 
-```
-._data
-├── SUBJECT1.yml
-├── SUBJECT2.yml
-├── SUBJECT3.yml
-...
+Website: https://adelwael.github.io/
 
-```
 
-For instance,
 
-```
-._data
-├── Awards.yml
-├── Education.yml
-├── Experience.yml
-├── Languages.yml
-├── Projects.yml
-├── Publications.yml
-├── Skills.yml
-```
+## Certificates
+Data science : Digital Egypt Pioneers Initiative - DEPI -2025
+## Projects
 
-### Fill your infomation
 
-Open the *Yaml* file which you created right before. Add the following materials inside of the file.
 
-* **subject**: title of a subject
-* **listing-order**: determines the display order (from top to bottom)
-* **icon**: representative icon to be displayed (pick out from `resources/svgs`)
-* **contents**: The details of each item, listed in `KEY`-`VALUE` pairs 
+NBA Data Analysis Project 
 
-```yml
-subject:
-listing-order:
-icon:
-contents:
-  - title: ITEM 1
-    KEY: VALUE
-    KEY: VALUE
-    ...
-  - title: ITEM 2
-    KEY: VALUE
-    ...
-```
+• Collected, cleaned, and preprocessed NBA player statistics and game data using Python (Pandas, NumPy) and SQL. 
 
-For a better understanding, see the example below.
+• Conducted exploratory data analysis (EDA) using Matplotlib and Seaborn to identify trends in player performance, team dynamics, and game outcomes. 
 
-```yml
-subject: Education
-listing-order: 1
-icon: "/assets/img/graduation-cap.svg"
-contents:
-  - title: Stanfort University, MA in Computer Science
-    description:
-      - Development of algorithms for tracking the facial expressions
-      - Optimizing parameter efficient fine tuning for fairness
-    grade: "**GPA**: `4.1/4.3`"
-    date: Mar. 2014 - Feb. 2016
-  ...
+• Designed interactive dashboards and visualizations using Plotly to effectively communicate insights.
 
-```
+• Optimized data querying processes by developing SQL scripts, improving retrieval times by 30% and enabling faster analysis for strategic decision-making. 
 
-The rendered output looks like this:
+• Delivered actionable insights to optimize fantasy league strategies and team performance. Tools: Python, SQL, Matplotlib, Seaborn, Plotly, Jupyter Notebook.
 
-![example1](https://i.ibb.co/9TGKPrv/123312.webp)
 
-See also the advanced example. 
+## Technical Skills
 
-> **Important**: You can use markdown syntax to **apply text bold, italic, and underlined** effects or **create HTML elements** (including image, links, span, etc.)!
 
-```yml
-subject: Projects
-listing-order: 3
-icon: "/assets/img/clipboard-list.svg"
-contents:
-  - title: "ChatPPT ([https://chat.opena1.com/](https://chat.openai.com/))"
-    description: 
-      - Chatbot developed based on a large language model
-      - Designed Generative algorithm to generate novel human-like content
-      - "Technology Used: Rust, Typescript, Python, Ruby"
-    image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
-  ...
 
-```
+• Programming Languages: python , SQL and C++. • Data science: Proficient in python , SQL and using Jupyter Notebook
 
-![example](https://i.ibb.co/tCNCyYr/231321.webp)
+• Database Management: MySQL
 
-## Build from Gem package
+• Image Processing: Expertise in image filters and AI integration
 
-If you don't like the above setup option (clone/fork the original github repo), then you can also build your site by installing the gem package remotely. Read this altenative [guide](https://github.com/byanko55/jekyll-professional-resume/blob/master/docs/Installation%20from%20package.md).
+• Data Structures & Algorithms: Strong understanding for efficient coding
 
-## Customizing
 
-### Change Color Palette
-Wanna pick another color? You can edit the base theme palette in `assets/css/style.scss`.
-```css
-:root {
-    --color-background: #fffdfb;
-    --theme1-light: #F6D8CB;
-    --theme1-medium: #D0A694;
-    --theme1-dim: #B07D67;
-    --theme1-dark: #8A5843;
-    --theme2-light: #B1B1C2;
-    ...
 
-}
-```
 
-### Site Shortcut Icon
-To replace the shortcut icon displayed on browser tab, modify *icon_img* field in `_config.yml`.
-![shortcut](https://i.ibb.co/g9cYjRj/213213214.webp)
+## Relevant Coursework
 
-```yml
-icon_img: "<IMAGE URL/PATH>"
-```
 
-## Contribution
-If you would like to report a bug or request a new feature, please open [an issue](https://github.com/byanko55/jekyll-professional-resume/issues) We are open to any kind of feedback or collaboration.
-<br></br>
 
-## License
-© 2024 *Yankos*. This theme is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/).
+
+Core Programming: Data Structures, Algorithms, Object-Oriented Programming (OOP)
+Mathematics: Linear Algebra, Discrete Mathematics, Calculus
+Systems: Operating Systems, Database Management
+Experience
+
+
+
+## Education
+
+
+
+
+Modern University For Technology and Information – Cairo, elmokkatam
+
+Bachelor of Information and Communication Technology (Major: computer science)
+
+October 2021 – May 2025
