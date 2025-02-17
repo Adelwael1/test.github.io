@@ -1,20 +1,19 @@
-title: adel wael ahmed 
-profile_img: /assets/img/profile.webp
-icon_img: /assets/img/icon.webp
+title: Eslam Atia
+profile_img: /assets/img/_assets/img/WhatsApp Image 2024-12-26 at 20.18.35_fe90eae8.jpg
+icon_img: /assets/img/tab_icon.png
+name: Eslam Atia
+job: SWE Student | Competitive Programmer
 
-name: "adel wael ahmed"
-job: "〈Data Scientist〉"
-
-phone_number: 01092148356
-address: cairo, egypt
-email: adelwael3922@gmail.com
-linkedin_username: adel wael
-github_username: Adelwael1
-#instagram_username: instagram
-#twitter_username: twitter
-#facebook_username: facebook
-#youtube_username: youtube
-#blog_url: homepage-url
+phone_number: 01004742088
+address: Cairo, Egypt
+email: eslam.mo.atia@gmail.com
+linkedin_username: eKor
+github_username: eKorayem
+# instagram_username: instagram
+# twitter_username: twitter
+# facebook_username: facebook
+# youtube_username: youtube
+# blog_url: homepage-url
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
 # Otherwise, set its value as "/<repo-name>". ex) baseurl: /resume
